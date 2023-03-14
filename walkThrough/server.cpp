@@ -11,7 +11,7 @@ HardCoding por el momento
 server parameters
 */
 #define SERV_PORT       8080
-#define SERV_IP   "10.11.1.8"
+#define SERV_IP   "10.11.1.7"
 #define BUFF_SIZE       1000 // Buffer rx, tx max size
 #define BACKLOG         5 // Max. No client_struckes pendientes en cola
 
@@ -23,12 +23,12 @@ int main() {
     int fdope;
     char lec[1053] = {0};
 
-    fdope = open("index.html", O_RDONLY);
+    fdope = open("prueba.html", O_RDONLY);
     std::cout << "fdope = " << fdope << std::endl;
     int leido = read(fdope, lec, 1053);
     std::cout << "leido = " << leido << std::endl;
 
-    // write(1, lec, 1053);
+    write(1, lec, 1053);
 
    int  len_rx, len_tx = 0;
 //    char hello[BUFF_SIZE] = "HTTP/1.1 200 Ok\nContent-Type: text/plain\nContent-Length: 10\n\nHello Word!@";

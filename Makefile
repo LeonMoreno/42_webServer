@@ -4,13 +4,13 @@ SRC_DIR	= src/
 
 OBJ_DIRF	= obj_ft/
 
-CPPFLAGS	= -g -Wall -Wextra -Werror
+CPPFLAGS	= -g -Wall -Wextra -Werror -I include/
 CPPFLAGS	+= -std=c++98
 CC 			= c++
 RM 			= rm -fr
 
 #Souces FIles
-SRC_FILES	= server
+SRC_FILES	= MainServer WebServer TCPSocket
 
 #OBJS
 ##OBJ = $(SRC:.cpp=.o)
