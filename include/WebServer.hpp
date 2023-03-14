@@ -11,7 +11,7 @@ class WebServer {
 
     public:
         // TCPSocket   s(t_fileConfig fileConfig);
-        TCPSocket   s;
+        TCPSocket   s(t_fileConfig fileConfig);
 
         // Canonical
         WebServer();

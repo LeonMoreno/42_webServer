@@ -17,7 +17,7 @@ class TCPSocket {
         // struct      sockaddr_in st_clie;
     
     public:
-        TCPSocket();
+        TCPSocket(t_fileConfig fc);
         ~TCPSocket(void);
         // StartTcpSocket(void);
 };

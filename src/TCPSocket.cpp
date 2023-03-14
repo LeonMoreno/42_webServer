@@ -1,11 +1,10 @@
 #include "TCPSocket.hpp"
 
 
-TCPSocket::TCPSocket() {
+TCPSocket::TCPSocket(t_fileConfig fc) {
     std::cout << "Construcotr Socket" << std::endl;
-    // std::cout << "IP = "  << fc.server_ip << std::endl;
-    // this->StartTcpSocket();
-    // (void) fileConfig;
+    std::cout << "IP = "  << fc.server_ip << std::endl;
+ 
 }
 
 TCPSocket::~TCPSocket(void) {
