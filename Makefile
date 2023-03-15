@@ -1,5 +1,5 @@
 #Variables
-NAME	= webser
+NAME	= webser.out
 SRC_DIR	= src/
 
 OBJ_DIRF	= obj_ft/

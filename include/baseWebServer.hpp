@@ -1,5 +1,5 @@
-#ifndef STRUCTS_HPP
-# define STRUCTS_HPP
+#ifndef BASEWEBSERVER_HPP
+# define BASEWEBSERVER_HPP
 
 typedef struct s_fileConfig {
     std::string server_ip;

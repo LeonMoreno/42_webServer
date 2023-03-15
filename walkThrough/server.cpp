@@ -28,11 +28,11 @@ int main() {
     int leido = read(fdope, lec, 1053);
     std::cout << "leido = " << leido << std::endl;
 
-    write(1, lec, 1053);
+    // write(1, lec, 1053);
 
    int  len_rx, len_tx = 0;
 //    char hello[BUFF_SIZE] = "HTTP/1.1 200 Ok\nContent-Type: text/plain\nContent-Length: 10\n\nHello Word!@";
-   char hello[BUFF_SIZE] = "HTTP/1.1 200 Ok\nContent-Type: text/html\nContent-Length: 1053\n";
+   char hello[BUFF_SIZE] = "HTTP/1.1 200 Ok\nContent-Type: text/plain\nContent-Length: 100\n";
    char buff_rx[BUFF_SIZE] = {0}; // Buffers para recepcion
 
    if ((fds = socket(AF_INET, SOCK_STREAM, 0)) == -1) {

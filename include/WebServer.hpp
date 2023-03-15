@@ -2,7 +2,7 @@
 # define WEBSERVER_HPP
 
 #include "TCPSocket.hpp"
-#include "Structs.hpp"
+#include "baseWebServer.hpp"
 
 class WebServer {
 
