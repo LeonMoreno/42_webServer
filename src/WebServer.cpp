@@ -7,11 +7,13 @@ WebServer::WebServer() {
     this->fileConfig.server_ip = "127.0.0.1";
     this->fileConfig.server_port = 8080;
 
-    TCPSocket s(fileConfig);
-    
-    
+    this->initWebServ();
 }
 
 WebServer::~WebServer() {
     std::cout << "DESTrucotr" << std::endl;
+}
+
+void    WebServer::initWebServ() {
+    TCPSocket s(fileConfig);
 }

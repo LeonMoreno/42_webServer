@@ -16,6 +16,8 @@ class WebServer {
         // Canonical
         WebServer();
         ~WebServer();
+
+        void initWebServ();
 };
 
 #endif
