@@ -1,17 +1,14 @@
 #ifndef TCPSOCKET_HPP
 # define TCPSOCKET_HPP
 
-#include <iostream> // Tempo
 #include "baseWebServer.hpp"
-
-#include <sys/socket.h> // socket() - bind()
-#include <arpa/inet.h> // inet_addr
 
 class TCPSocket {
     /* data */
     private:
-        // int         fd_socket;   
+        int         fd_sock;   
         // int         fd_new_socket;
+        int         opt_setsock;
         // unsigned    in_mgsLen;
         // struct      sockaddr_in st_serv;
         // struct      sockaddr_in st_clie;
@@ -19,7 +16,7 @@ class TCPSocket {
     public:
         TCPSocket(t_fileConfig fc);
         ~TCPSocket(void);
-        void    initTcpSocket(void);
+        int    initTcpSocket(void);
 };
 
 #endif
