@@ -10,14 +10,13 @@ class WebServer {
         t_fileConfig fileConfig;
 
     public:
-        // TCPSocket   s(t_fileConfig fileConfig);
         TCPSocket   s(t_fileConfig fileConfig);
 
         // Canonical
         WebServer();
         ~WebServer();
 
-        void initWebServ();
+        int initWebServ();
 };
 
 #endif

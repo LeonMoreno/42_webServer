@@ -5,18 +5,20 @@
 
 class TCPSocket {
     /* data */
-    private:
+    public:
         int         fd_sock;   
-        // int         fd_new_socket;
+        int         fd_new_socket;
         int         opt_setsock;
-        // unsigned    in_mgsLen;
-        // struct      sockaddr_in st_serv;
-        // struct      sockaddr_in st_clie;
+        unsigned    in_mgsLen;
+        struct      sockaddr_in st_serv;
+        struct      sockaddr_in st_clie;
     
     public:
         TCPSocket(t_fileConfig fc);
         ~TCPSocket(void);
         int    initTcpSocket(void);
+        int     initBind(t_fileConfig fc);
+        int     initListen();
 };
 
 #endif

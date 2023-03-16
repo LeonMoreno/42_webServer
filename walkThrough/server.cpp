@@ -11,7 +11,7 @@ HardCoding por el momento
 server parameters
 */
 #define SERV_PORT       8080
-#define SERV_IP   "10.11.1.7"
+#define SERV_IP   "127.0.0.1"
 #define BUFF_SIZE       1000 // Buffer rx, tx max size
 #define BACKLOG         5 // Max. No client_struckes pendientes en cola
 
