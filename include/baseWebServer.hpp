@@ -12,6 +12,8 @@
 #define SER_IP "127.0.0.1"
 #define BACKLOG 5
 
+void    ft_exit(std::string s);
+
 typedef struct s_fileConfig {
     // std::string server_ip;
     int         server_port;

@@ -10,7 +10,7 @@ CC 			= c++
 RM 			= rm -fr
 
 #Souces FIles
-SRC_FILES	= MainServer WebServer TCPSocket
+SRC_FILES	= MainServer WebServer TCPSocket baseUtils
 
 #OBJS
 ##OBJ = $(SRC:.cpp=.o)

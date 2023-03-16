@@ -16,8 +16,8 @@ class TCPSocket {
     public:
         TCPSocket(t_fileConfig fc);
         ~TCPSocket(void);
-        int    initTcpSocket(void);
-        int     initBind(t_fileConfig fc);
+        void     initTcpSocket(void);
+        void     initBind(t_fileConfig fc);
         int     initListen();
 };
 
